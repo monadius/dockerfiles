@@ -1,0 +1,17 @@
+INPUTS {
+       x fl64 : (-3, 3);
+}
+
+OUTPUTS {
+       input;
+       x3;
+       const;
+       const1;
+}
+
+EXPRS {
+      input rnd64= x;
+      x3 rnd64= 3 * x;
+      const rnd64= 0.1;
+      const1 rnd64= 1;
+}

@@ -34,4 +34,5 @@ RUN git clone https://github.com/arnabd88/Satire.git && \
     git -C Satire checkout -b satire 8a4816a
 
 COPY --chown=user satire.sh /home/user/Satire/run
+COPY --chown=user test.satire /home/user/Satire/
 WORKDIR /home/user/Satire
