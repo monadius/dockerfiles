@@ -1,0 +1,3 @@
+fname=$(basename -- "$1")
+name="${fname%.*}"
+sudo docker build -t "$name" -f "$1" .
