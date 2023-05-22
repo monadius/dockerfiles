@@ -20,4 +20,4 @@ WORKDIR /home/user/daisy
 
 RUN sbt compile && sbt script
 
-COPY --chown=user test.scala .
+COPY --chown=user test.scala /home/user/daisy

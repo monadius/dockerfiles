@@ -35,4 +35,5 @@ RUN git clone https://github.com/arnabd88/Satire.git && \
 
 COPY --chown=user satire.sh /home/user/Satire/run
 COPY --chown=user test.satire /home/user/Satire/
+# COPY --chown=user utils.py /home/user/Satire/src/
 WORKDIR /home/user/Satire
