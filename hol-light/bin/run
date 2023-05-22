@@ -1,0 +1,10 @@
+set -eu
+
+IMAGE=hol-light
+# C=$(docker container create -it --rm $IMAGE sh -c ocaml)
+
+COMPUTE_PATH=/home/monad/work/git/my/compute-hol-light
+
+# docker container start --attach $C
+docker container run -it --rm -v $COMPUTE_PATH:/home/opam/compute $IMAGE sh -c ocaml
+# docker container run -it --rm -v $COMPUTE_PATH:/home/opam/compute $IMAGE
