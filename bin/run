@@ -3,4 +3,4 @@ name="${fname%.*}"
 
 IMAGE=$name:latest
 
-sudo docker run --rm -it $IMAGE bash
+docker run --rm -it $IMAGE bash

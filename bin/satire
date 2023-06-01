@@ -1,0 +1,6 @@
+IMAGE=satire
+FNAME=$(basename -- "$1")
+C=$(docker container create --rm $IMAGE sh -c "./run $FNAME")
+docker container cp $1 $C:/home/user/Satire
+
+docker container start --attach $C
